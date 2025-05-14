@@ -124,6 +124,7 @@ body {
     font-family: var(--font-family);
     background-color: var(--background-color);
     color: var(--text-color);
+
 }
 
 html {
@@ -284,7 +285,7 @@ a:hover {
     margin-bottom: 3.5rem;
 }
 
-.hero-button {
+.button {
     background-color: var(--button-background);
     color: var(--button-color);
     padding: 15px 30px;
@@ -294,9 +295,10 @@ a:hover {
     cursor: pointer;
     margin-bottom: 5rem;
     transition: opacity 0.3s ease;
+    max-width: 180px;
 }
 
-.hero-button:hover {
+.button:hover {
     opacity: 0.9;
 }
 
@@ -399,7 +401,6 @@ a:hover {
         position: relative;
         left: -2.5rem;
         top: 1.8rem;
-        max-width: 40%;
     }
 
     .navigation {
@@ -407,11 +408,9 @@ a:hover {
         width: calc(100% + 40px);
         margin-top: 1rem;
     }
-
-
 }
 
-/*====== What we do (wwd) Section =====*/
+/*====== What we do (wwd) Section ===== */
 .text-dark {
     color: var(--color-text-dark);
 }
@@ -426,11 +425,11 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem 1rem;
     flex-wrap: wrap;
 }
 
 .header-sound-card {
+    padding: 3rem 1rem;
     text-align: center;
     margin-top: 5rem;
     display: flex;
@@ -455,15 +454,17 @@ a:hover {
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     margin-top: 0rem;
+    margin-bottom: 5rem;
     text-align: center;
-    gap: 2rem;
+    gap: 8rem;
+    padding: 3rem 3rem;
 }
 
 .icon {
-    font-size: 5rem;
+    font-size: 8rem;
     margin-bottom: 0.5rem;
     color: var(--secondary-color);
 }
@@ -483,10 +484,182 @@ a:hover {
 .card p {
     font-size: 0.9rem;
     line-height: 1.5rem;
+    max-width: 150px
 }
 
 @media (max-width: 768px) {
     .group-sound-card {
         flex-wrap: wrap;
+        gap: 10rem;
+    }
+    .group-sound-card p {
+        max-width: 150px;
+    }
+}
+
+
+/* Our results Section */
+
+.our-results {
+    color: var(--color-text-light);
+    background-image: url('images/headphones_hero_2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-results {
+    margin-top: 0rem;
+    margin-bottom: 0;
+}
+
+.card-results .pentagone {
+    position: absolute;
+}
+
+.card-results h2 {
+    position: relative;
+    margin-top: -7rem;
+}
+
+.card-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    padding: 3rem 3rem;
+    flex-wrap: wrap;
+    margin-top: 0;
+    justity-content: center;
+} 
+
+.group-results {
+    gap: 2rem;
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Form of contact */
+/* Contact Form Section */
+.contact-form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #2C3E50;
+    margin-bottom: 1.5rem;
+}
+
+.group-form {
+    margin-bottom: 1rem;
+}
+
+.group-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2C3E50;
+}
+
+.group-form input,
+.group-form textarea {
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.group-form input:focus,
+.group-form textarea:focus {
+    border-bottom: 1px solid #2C3E50;
+}
+
+.group-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+form .button {
+    margin-left: 7rem;
+    max-width: 180px;
+}
+
+.button:hover {
+    background-color: #e55454;
+}
+
+/* Footer */
+footer {
+    background-color: #0B1627;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.header-inner.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 1rem auto;
+}
+
+.header-inner.footer > div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-container {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    margin-bottom: 1rem;
+}
+
+.footer-container a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-container a:hover {
+    color: #FF6565;
+}
+
+.header-inner.footer p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (max-width: 480px) {
+    .footer-logo-lien {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: -6rem auto;
     }
 }

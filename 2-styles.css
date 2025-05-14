@@ -399,7 +399,6 @@ a:hover {
         position: relative;
         left: -2.5rem;
         top: 1.8rem;
-        max-width: 40%;
     }
 
     .navigation {
@@ -407,17 +406,12 @@ a:hover {
         width: calc(100% + 40px);
         margin-top: 1rem;
     }
-
-
 }
 
-/*====== What we do (wwd) Section =====*/
+/*====== What we do (wwd) Section ===== */
 .text-dark {
     color: var(--color-text-dark);
-}
-
-.text-light {
-    color: var(--color-text-light);
+    background: none;
 }
 
 .wwd {
@@ -426,11 +420,11 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem 1rem;
     flex-wrap: wrap;
 }
 
 .header-sound-card {
+    padding: 3rem 1rem;
     text-align: center;
     margin-top: 5rem;
     display: flex;
@@ -455,15 +449,17 @@ a:hover {
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     margin-top: 0rem;
+    margin-bottom: 5rem;
     text-align: center;
-    gap: 2rem;
+    gap: 8rem;
+    padding: 3rem 3rem;
 }
 
 .icon {
-    font-size: 5rem;
+    font-size: 8rem;
     margin-bottom: 0.5rem;
     color: var(--secondary-color);
 }
@@ -483,10 +479,60 @@ a:hover {
 .card p {
     font-size: 0.9rem;
     line-height: 1.5rem;
+    max-width: 150px
 }
 
 @media (max-width: 768px) {
     .group-sound-card {
         flex-wrap: wrap;
+        gap: 10rem;
     }
+    .group-sound-card p {
+        max-width: 150px;
+    }
+}
+
+
+/* Our results Section */
+
+.text-light,
+.our-results {
+    color: var(--color-text-light);
+    background-image: url('images/headphones_hero_2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-results {
+    margin-top: 0rem;
+    margin-bottom: 0;
+}
+
+.card-results .pentagone {
+    position: absolute;
+}
+
+.card-results h2 {
+    position: relative;
+    margin-top: -7rem;
+}
+
+.card-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    padding: 3rem 3rem;
+    flex-wrap: wrap;
+    margin-top: 0;
+    justity-content: center;
+} 
+
+.group-results {
+    gap: 2rem;
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
 }

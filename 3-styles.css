@@ -124,6 +124,7 @@ body {
     font-family: var(--font-family);
     background-color: var(--background-color);
     color: var(--text-color);
+
 }
 
 html {
@@ -284,7 +285,7 @@ a:hover {
     margin-bottom: 3.5rem;
 }
 
-.hero-button {
+.button {
     background-color: var(--button-background);
     color: var(--button-color);
     padding: 15px 30px;
@@ -296,7 +297,7 @@ a:hover {
     transition: opacity 0.3s ease;
 }
 
-.hero-button:hover {
+.button:hover {
     opacity: 0.9;
 }
 
@@ -399,7 +400,6 @@ a:hover {
         position: relative;
         left: -2.5rem;
         top: 1.8rem;
-        max-width: 40%;
     }
 
     .navigation {
@@ -407,11 +407,9 @@ a:hover {
         width: calc(100% + 40px);
         margin-top: 1rem;
     }
-
-
 }
 
-/*====== What we do (wwd) Section =====*/
+/*====== What we do (wwd) Section ===== */
 .text-dark {
     color: var(--color-text-dark);
 }
@@ -426,11 +424,11 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem 1rem;
     flex-wrap: wrap;
 }
 
 .header-sound-card {
+    padding: 3rem 1rem;
     text-align: center;
     margin-top: 5rem;
     display: flex;
@@ -455,15 +453,17 @@ a:hover {
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     margin-top: 0rem;
+    margin-bottom: 5rem;
     text-align: center;
-    gap: 2rem;
+    gap: 8rem;
+    padding: 3rem 3rem;
 }
 
 .icon {
-    font-size: 5rem;
+    font-size: 8rem;
     margin-bottom: 0.5rem;
     color: var(--secondary-color);
 }
@@ -483,10 +483,104 @@ a:hover {
 .card p {
     font-size: 0.9rem;
     line-height: 1.5rem;
+    max-width: 150px
 }
 
 @media (max-width: 768px) {
     .group-sound-card {
         flex-wrap: wrap;
+        gap: 10rem;
     }
+    .group-sound-card p {
+        max-width: 150px;
+    }
+}
+
+
+/* Our results Section */
+
+.our-results {
+    color: var(--color-text-light);
+    background-image: url('images/headphones_hero_2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-results {
+    margin-top: 0rem;
+    margin-bottom: 0;
+}
+
+.card-results .pentagone {
+    position: absolute;
+}
+
+.card-results h2 {
+    position: relative;
+    margin-top: -7rem;
+}
+
+.card-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    padding: 3rem 3rem;
+    flex-wrap: wrap;
+    margin-top: 0;
+    justity-content: center;
+} 
+
+.group-results {
+    gap: 2rem;
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Form of contact */
+.contact-form-container {
+    width: 100%;
+    max-width: 100vh;
+    text-align: center;
+    padding: 10px;
+    margin: 2.5rem auto;
+    line-height: 1.5rem;
+}
+
+.form {
+    widht: 40%;
+}
+/* Input fields */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 0;
+    border-buttom: 1000px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    box-sizing: border-box;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: black;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 3000px;
+    border-bottom: 2x;
+
+}
+
+#contact-form .group-form input {
+    border: 0;
+    width: 100%;
 }
